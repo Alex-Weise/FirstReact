@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {App, Tick} from './App';
+import './App.css';
+import {Clock, Tick} from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App date={new Date()} />
+    <Clock />
     <Tick />
   </React.StrictMode>
 );
