@@ -1,5 +1,5 @@
 import React from 'react';
-import './Title.css';
+import styles from './styles.module.css';
 
 class Tick extends React.Component {
     constructor (props) {
@@ -21,7 +21,7 @@ class Tick extends React.Component {
   
     render() {
       return (
-        <div className="title">
+        <div className={styles.title}>
           <h1>The clock from class</h1>
           <h2>Now {this.state.date.toLocaleTimeString()}</h2>
         </div>
